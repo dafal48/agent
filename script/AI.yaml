@@ -1,71 +1,71 @@
-# 2025-03-04 21:14:06
-# ChatGPT
-AND, ((DOMAIN-KEYWORD, chatgpt-async-webps-prod-), (DOMAIN-SUFFIX, webpubsub.azure.com))
-AND, ((DOMAIN-KEYWORD, openaicom-api-), (DOMAIN-SUFFIX, azurefd.net))
-DOMAIN, chatgpt.livekit.cloud
-DOMAIN, host.livekit.cloud
-DOMAIN, openai.com.cdn.cloudflare.net
-DOMAIN, openaiapi-site.azureedge.net
-DOMAIN, openaicomproductionae4b.blob.core.windows.net
-DOMAIN, production-openaicom-storage.azureedge.net
-DOMAIN, turn.livekit.cloud
-DOMAIN-SUFFIX, chat.com
-DOMAIN-SUFFIX, chatgpt.com
-DOMAIN-SUFFIX, oaistatic.com
-DOMAIN-SUFFIX, oaiusercontent.com
-DOMAIN-SUFFIX, openai.com
-DOMAIN-SUFFIX, sora.com
+payload:
+  # ChatGPT
+  - AND,[(DOMAIN-KEYWORD,chatgpt-async-webps-prod-),(DOMAIN-SUFFIX,webpubsub.azure.com)],Proxy
+  - AND,[(DOMAIN-KEYWORD,openaicom-api-),(DOMAIN-SUFFIX,azurefd.net)],Proxy
+  - DOMAIN,chatgpt.livekit.cloud,Proxy
+  - DOMAIN,host.livekit.cloud,Proxy
+  - DOMAIN,openai.com.cdn.cloudflare.net,Proxy
+  - DOMAIN,openaiapi-site.azureedge.net,Proxy
+  - DOMAIN,openaicomproductionae4b.blob.core.windows.net,Proxy
+  - DOMAIN,production-openaicom-storage.azureedge.net,Proxy
+  - DOMAIN,turn.livekit.cloud,Proxy
+  - DOMAIN-SUFFIX,chat.com,Proxy
+  - DOMAIN-SUFFIX,chatgpt.com,Proxy
+  - DOMAIN-SUFFIX,oaistatic.com,Proxy
+  - DOMAIN-SUFFIX,oaiusercontent.com,Proxy
+  - DOMAIN-SUFFIX,openai.com,Proxy
+  - DOMAIN-SUFFIX,sora.com,Proxy
 
-# Copilot
-DOMAIN, api.githubcopilot.com
-DOMAIN, copilot-proxy.githubusercontent.com
-DOMAIN, copilot.microsoft.com
-DOMAIN, sydney.bing.com
-DOMAIN, www.bing.com
+  # Copilot
+  - DOMAIN,api.githubcopilot.com,Proxy
+  - DOMAIN,copilot-proxy.githubusercontent.com,Proxy
+  - DOMAIN,copilot.microsoft.com,Proxy
+  - DOMAIN,sydney.bing.com,Proxy
+  - DOMAIN,www.bing.com,Proxy
 
-# Gemini
-DOMAIN, ai.google.dev
-DOMAIN, aida.googleapis.com
-DOMAIN, aistudio.google.com
-DOMAIN, alkalicore-pa.clients6.google.com
-DOMAIN, alkalimakersuite-pa.clients6.google.com
-DOMAIN, bard.google.com
-DOMAIN, deepmind.com
-DOMAIN, deepmind.google
-DOMAIN, geller-pa.googleapis.com
-DOMAIN, gemini.google.com
-DOMAIN, generativeai.google
-DOMAIN, generativelanguage.googleapis.com
-DOMAIN, makersuite.google.com
-DOMAIN, proactivebackend-pa.googleapis.com
+  # Gemini
+  - DOMAIN,ai.google.dev,Proxy
+  - DOMAIN,aida.googleapis.com,Proxy
+  - DOMAIN,aistudio.google.com,Proxy
+  - DOMAIN,alkalicore-pa.clients6.google.com,Proxy
+  - DOMAIN,alkalimakersuite-pa.clients6.google.com,Proxy
+  - DOMAIN,bard.google.com,Proxy
+  - DOMAIN,deepmind.com,Proxy
+  - DOMAIN,deepmind.google,Proxy
+  - DOMAIN,geller-pa.googleapis.com,Proxy
+  - DOMAIN,gemini.google.com,Proxy
+  - DOMAIN,generativeai.google,Proxy
+  - DOMAIN,generativelanguage.googleapis.com,Proxy
+  - DOMAIN,makersuite.google.com,Proxy
+  - DOMAIN,proactivebackend-pa.googleapis.com,Proxy
 
-# Claude
-DOMAIN-SUFFIX, anthropic.com
-DOMAIN-SUFFIX, claude.ai
-DOMAIN-SUFFIX, claudeusercontent.com
-IP-CIDR, 160.79.104.0/23, no-resolve
-IP-CIDR6, 2607:6bc0::/48, no-resolve
+  # Claude
+  - DOMAIN-SUFFIX,anthropic.com,Proxy
+  - DOMAIN-SUFFIX,claude.ai,Proxy
+  - DOMAIN-SUFFIX,claudeusercontent.com,Proxy
+  - IP-CIDR,160.79.104.0/23,Proxy,no-resolve
+  - IP-CIDR6,2607:6bc0::/48,Proxy,no-resolve
 
-# JetBrains AI
-DOMAIN-SUFFIX, grazie.ai
-DOMAIN-SUFFIX, grazie.aws.intellij.net
-DOMAIN-SUFFIX, jetbrains.ai
+  # JetBrains AI
+  - DOMAIN-SUFFIX,grazie.ai,Proxy
+  - DOMAIN-SUFFIX,grazie.aws.intellij.net,Proxy
+  - DOMAIN-SUFFIX,jetbrains.ai,Proxy
 
-# Meta AI
-DOMAIN, imagine.meta.com
-DOMAIN-SUFFIX, meta.ai
+  # Meta AI
+  - DOMAIN,imagine.meta.com,Proxy
+  - DOMAIN-SUFFIX,meta.ai,Proxy
 
-# Perplexity
-DOMAIN-SUFFIX, pplx.ai
-DOMAIN-SUFFIX, perplexity.ai
-DOMAIN-SUFFIX, perplexity.com
+  # Perplexity
+  - DOMAIN-SUFFIX,pplx.ai,Proxy
+  - DOMAIN-SUFFIX,perplexity.ai,Proxy
+  - DOMAIN-SUFFIX,perplexity.com,Proxy
 
-# Mistral AI
-DOMAIN, chat.mistral.ai
-DOMAIN, console.mistral.ai
-DOMAIN-SUFFIX, mistral.ai
+  # Mistral AI
+  - DOMAIN,chat.mistral.ai,Proxy
+  - DOMAIN,console.mistral.ai,Proxy
+  - DOMAIN-SUFFIX,mistral.ai,Proxy
 
-# Grok AI
-DOMAIN, api.x.ai
-DOMAIN-SUFFIX, x.ai
-DOMAIN-SUFFIX, grok.com
+  # Grok AI
+  - DOMAIN,api.x.ai,Proxy
+  - DOMAIN-SUFFIX,x.ai,Proxy
+  - DOMAIN-SUFFIX,grok.com,Proxy 
